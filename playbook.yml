@@ -45,4 +45,4 @@
 
   - name: check page content   
     fail:   
-    when: "'Hello World!E' not in page.content"
+    when: "'Hello World!' not in page.content"
