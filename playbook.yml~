@@ -42,4 +42,7 @@
       url: http://localhost:8080     
       return_content: yes   
       register: page
-      failed_when: '"Hello World!" not in page.content'
+
+  - name: check page content   
+    fail:   
+    when: '"Hello World!" not in page.content'
