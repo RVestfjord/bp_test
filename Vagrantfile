@@ -7,6 +7,6 @@ Vagrant.configure("2") do |config|
     s.binary = true
     s.inline = " yum install -y epel-release; \
                  yum install -y ansible python-pip python wheel; \
-                 ansible-playbook /vagrant/playbook.yml"
+                 ansible-playbook playbook.yml"
   end
 end
