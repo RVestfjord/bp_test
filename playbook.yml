@@ -41,8 +41,8 @@
     uri:     
       url: http://localhost:8080     
       return_content: yes   
-      register: page  - 
+      register: page
 
   - name: check page content   
     fail:   
-    when: "'Hello World!' not in page.content"
+    when: '"Hello World!" not in page.content'
